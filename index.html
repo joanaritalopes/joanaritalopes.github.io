@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Joana Lopes. MSc Data Science and AI at TU/e, thesis intern at ING, working on fraud and anomaly detection.">
+  <meta name="description" content="Joana Lopes. Data Science and AI master's student at TU/e, writing her thesis at ING on fairness in AML machine learning models.">
   <title>Joana Lopes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,11 @@
   <header class="site-header">
     <div class="container">
       <a href="#top" class="logo" aria-label="Back to top">&gt;<span class="cursor">_</span></a>
-      <nav class="nav">
-        <a href="#about"><span>01</span>About</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav">
+        <a href="#about"><span>01</span>About me</a>
         <a href="#cv"><span>02</span>CV</a>
         <a href="#projects"><span>03</span>Projects</a>
         <a href="#hobbies"><span>04</span>Offline</a>
@@ -26,146 +29,219 @@
   </header>
 
   <main id="top">
+    <div class="ticker ticker-top ticker-ltr" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+      </div>
+    </div>
+
     <section class="hero">
       <div class="container">
-        <div>
-          <p class="status">Open to ML Engineer roles · Eindhoven, NL</p>
-          <h1>I look for what <em>doesn't fit.</em></h1>
-          <p class="intro">Data Science and AI student at TU/e and thesis intern at ING, focused on fraud and anomaly detection. Before that, three years building backend and data systems at the European Central Bank and Deloitte.</p>
-          <p class="hero-links">
-            <a href="https://github.com/joanaritalopes" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/joanaritalopess/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:joanaritalopess@hotmail.com">Email</a>
-          </p>
+        <div class="hero-text">
+          <h1>The interesting part is <em>the outlier.</em></h1>
+          <p class="intro">Data Science and AI master's student at TU/e, writing my thesis at ING on uncertainty-aware fairness evaluation for AML machine learning models. Before that, I spent three years at the European Central Bank and Deloitte, working across business analysis, data engineering and backend development.</p>
           <ul class="stats">
-            <li><strong>3 yrs</strong><span>building production data and backend systems</span></li>
-            <li><strong>2</strong><span>master's degrees, from analyzing data to building with it</span></li>
-            <li><strong>1 yr</strong><span>to teach myself backend engineering</span></li>
+            <li><strong>3 yrs</strong><span>across business analysis, data engineering and backend roles</span></li>
+            <li><strong>2</strong><span>master's degrees, from analyzing data to building the systems behind it</span></li>
+            <li><strong>1 yr</strong><span>taught myself backend engineering from scratch</span></li>
           </ul>
         </div>
-        <img src="assets/photo.jpg" alt="Joana Lopes" class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/me.jpeg" alt="Joana Lopes">
+        </div>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <p class="label">01 / About</p>
-        <h2>From analyzing data to <em>building with it.</em></h2>
+        <p class="label">01 / About me</p>
+        <h2>How I <em>got here.</em></h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>I like problems where the answer is hiding. In fraud and anomaly detection, the cases that matter are rare and usually look perfectly normal until you look closer. That's the kind of puzzle I keep coming back to.</p>
-            <p>My first master's was mostly about analyzing data. Working with it every day, I realized the part I enjoyed most was the building: the code, the pipelines, how things actually work underneath. So I reskilled. At the ECB I went from intern to business analyst, then into data engineering and backend development in Python, before going back to university for a second master's in Data Science and AI at TU/e. Now I'm at ING for my thesis, studying how uncertainty changes what we can actually say about fairness in AML risk models.</p>
-            <p>Because I've built the pipelines and APIs that models end up living on, I think about the whole path: messy data in, something reliable running in production out.</p>
+            <p>I turn messy data into something a machine can learn from, and find the signals buried in it. Fraud and anomaly detection is where that counts most: the cases that matter are rare and usually look perfectly normal. Looking closer until they give themselves away is the part I find most exciting.</p>
+            <p>My first master's was about analyzing data, and after working with it every day, I noticed the part I enjoyed most was building things and understanding how they work under the surface. So I followed that. At the ECB I worked as a business analyst and data engineer before moving into backend development. Then I went back to university for a second master's in Data Science and AI at TU/e, specializing in machine learning to reskill for the field I want to work in. Now I'm doing an internship at ING, getting a close look at how a bank builds and checks the models it relies on to fight financial crime.</p>
+            <p>Having built the pipelines and APIs that machine learning models run on, I've seen what happens end to end: data validation, testing, deployment on AWS and monitoring in production. On the modeling side, I enjoy the whole cycle of building predictive models: framing the problem, engineering features, choosing how to evaluate them and understanding where they fail. I want to work where those two halves meet.</p>
           </div>
-          <ul class="facts">
-            <li><span>Now</span><strong>Thesis intern, ING</strong></li>
-            <li><span>Studying</span><strong>MSc Data Science and AI, TU/e</strong></li>
-            <li><span>Before</span><strong>ECB, Deloitte</strong></li>
-            <li><span>Based in</span><strong>Eindhoven, NL</strong></li>
-            <li><span>Next</span><strong>ML Engineer, fraud detection</strong></li>
-          </ul>
+          <blockquote class="pull-quote">
+            <p>Curiosity is a better compass than <em>a plan.</em></p>
+          </blockquote>
         </div>
         <div class="traits">
-          <article class="trait">
-            <p class="trait-path">analysis → engineering → ML</p>
-            <h3>Curious by default</h3>
-            <p>I wanted to know how things work underneath, not just what the dashboard says.</p>
+          <article class="trait window-light">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">curious.sh</span>
+            </div>
+            <div class="trait-body">
+              <p class="trait-path"><span class="prompt">$</span> data analysis → engineering → backend → machine learning</p>
+              <h3>Curious</h3>
+              <p>I want to know how things work instead of taking them as they are. Not just what the dashboard says, but how the numbers got there.</p>
+            </div>
           </article>
-          <article class="trait">
-            <p class="trait-path">0 → production in 1 year</p>
-            <h3>Self-taught</h3>
-            <p>Taught myself backend engineering, then shipped APIs and microservices at the ECB.</p>
+          <article class="trait window-light">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">fast_learner.sh</span>
+            </div>
+            <div class="trait-body">
+              <p class="trait-path"><span class="prompt">$</span> zero → production in under a year</p>
+              <h3>Fast learner</h3>
+              <p>Taught myself backend engineering from scratch in under a year, then built APIs and microservices that ran in production.</p>
+            </div>
           </article>
-          <article class="trait">
-            <p class="trait-path">intern → analyst → data eng → backend</p>
-            <h3>Asked back</h3>
-            <p>Grew through four roles at the ECB, and was rehired as a backend developer after Deloitte.</p>
+          <article class="trait window-light">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">both_languages.sh</span>
+            </div>
+            <div class="trait-body">
+              <p class="trait-path"><span class="prompt">$</span> business ↔ engineering</p>
+              <h3>Speak both languages</h3>
+              <p>Working as a business analyst, leading agile projects and presenting to stakeholders taught me how to explain models to people who don't read code, and how to turn vague business requirements into technical work.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+      </div>
+    </div>
+
     <section id="cv">
       <div class="container">
         <p class="label">02 / CV</p>
-        <h2>The short <em>version.</em></h2>
+        <h2>The longer <em>version.</em></h2>
         <div class="cv-grid">
-          <div>
-            <h3 class="cv-heading">Experience</h3>
-            <ol class="timeline">
-              <li>
-                <p class="when">Oct 2026 – Jun 2027</p>
-                <h4>Machine Learning Thesis Intern</h4>
-                <p class="where">ING · Amsterdam</p>
-                <p class="desc">Researching how uncertainty in predictions and fairness metrics changes conclusions about bias in AML/KYC risk models, using a synthetic data generator so no real client data is exposed.</p>
-              </li>
-              <li>
-                <p class="when">Jun 2024 – May 2025</p>
-                <h4>Backend Software Engineer</h4>
-                <p class="where">European Central Bank · Frankfurt</p>
-                <p class="desc">Built REST APIs and microservices with FastAPI and SQLAlchemy, data ingestion workflows into PostgreSQL, and deployed on AWS with Kubernetes, tested with PyTest and monitored in Datadog.</p>
-              </li>
-              <li>
-                <p class="when">Sept 2023 – Jan 2024</p>
-                <h4>Consultant</h4>
-                <p class="where">Deloitte · Frankfurt</p>
-                <p class="desc">Developed Python ETL pipelines and database schemas to speed up backend data flows.</p>
-              </li>
-              <li>
-                <p class="when">Aug 2022 – Jul 2023</p>
-                <h4>Business Analyst Specialist</h4>
-                <p class="where">European Central Bank · Frankfurt</p>
-                <p class="desc">Designed relational schemas for data warehousing, optimized large SQL workloads, and led agile projects between business and engineering.</p>
-              </li>
-              <li>
-                <p class="when">Aug 2021 – Jul 2022</p>
-                <h4>Information Systems Trainee</h4>
-                <p class="where">European Central Bank · Frankfurt</p>
-                <p class="desc">Built Power BI and Tableau dashboards that cut per-user reporting costs.</p>
-              </li>
-            </ol>
+          <div class="window">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">joana@portfolio: ~/cv/experience</span>
+            </div>
+            <div class="term-body cv-body">
+              <p class="term-line"><span class="prompt">$</span> cat experience.log</p>
+              <div class="role">
+                <p class="entry-date">Oct 2026 – Jun 2027</p>
+                <h4 class="entry-title">Machine Learning Thesis Intern</h4>
+                <p class="entry-org">ING · Amsterdam, Netherlands</p>
+                <ul class="entry-bullets">
+                  <li>Researching uncertainty-aware fairness metrics for AML/KYC customer risk assessment models, measuring how uncertainty in predictions and in fairness metrics affects conclusions about bias across customer groups.</li>
+                  <li>Designing a synthetic data generator in Python that simulates customer profiles with controlled bias, enabling fairness experiments without exposing sensitive client data.</li>
+                  <li>Building a proxy risk model to benchmark fairness metrics with uncertainty estimates.</li>
+                </ul>
+              </div>
+              <div class="role">
+                <p class="entry-date">Feb 2026 – Present</p>
+                <h4 class="entry-title">Sales Assistant</h4>
+                <p class="entry-org">Calzedonia · Eindhoven, Netherlands</p>
+                <ul class="entry-bullets">
+                  <li>Advising customers on products and fit in a busy store, adapting how I explain things to each person's needs.</li>
+                  <li>Balancing part-time shifts with a full-time master's, planning my week around deadlines, exams and work.</li>
+                  <li>Keeping service consistent during peak hours and sales periods, handling returns and customer concerns, and working with the team to reach shared store targets.</li>
+                </ul>
+              </div>
+              <div class="role">
+                <p class="entry-date">Jun 2024 – May 2025</p>
+                <h4 class="entry-title">Backend Software Engineer</h4>
+                <p class="entry-org">European Central Bank · Frankfurt, Germany</p>
+                <ul class="entry-bullets">
+                  <li>Built RESTful APIs and microservices with Python, FastAPI and SQLAlchemy, supporting data-driven applications and continuous integration with third-party benchmarking tools, while monitoring system health to ensure reliability.</li>
+                  <li>Designed workflows to ingest, transform and write data into PostgreSQL, integrating external data sources into backend logic.</li>
+                  <li>Optimized database queries and schema structures to speed up data retrieval and reduce latency in backend workflows.</li>
+                  <li>Applied engineering best practices: unit testing with PyTest, data validation with Pydantic, performance monitoring in Datadog, and deployment on AWS (Kubernetes, EC2, RDS) with CloudWatch logging.</li>
+                  <li>Worked in Agile Scrum teams, contributing to continuous delivery pipelines that kept production environments stable.</li>
+                </ul>
+              </div>
+              <div class="role">
+                <p class="entry-date">Sept 2023 – Jan 2024</p>
+                <h4 class="entry-title">Consultant</h4>
+                <p class="entry-org">Deloitte · Frankfurt, Germany</p>
+                <ul class="entry-bullets">
+                  <li>Developed Python ETL pipelines for data preprocessing and designed efficient database schemas to speed up processing and streamline backend data flow.</li>
+                  <li>Implemented version control practices with Git and GitLab, improving code collaboration and enabling continuous integration.</li>
+                </ul>
+              </div>
+              <div class="role">
+                <p class="entry-date">Aug 2022 – Jul 2023</p>
+                <h4 class="entry-title">Business Analyst Specialist</h4>
+                <p class="entry-org">European Central Bank · Frankfurt, Germany</p>
+                <ul class="entry-bullets">
+                  <li>Designed and optimized relational database schemas to support efficient data warehousing and downstream analytics.</li>
+                  <li>Extracted and transformed large-scale datasets with SQL, improving query performance for reporting and analytics.</li>
+                  <li>Led agile project management, bridging business requirements and technical implementation, and presented findings and data-driven recommendations to senior stakeholders.</li>
+                </ul>
+              </div>
+              <div class="role">
+                <p class="entry-date">Aug 2021 – Jul 2022</p>
+                <h4 class="entry-title">Information Systems Trainee</h4>
+                <p class="entry-org">European Central Bank · Frankfurt, Germany</p>
+                <ul class="entry-bullets">
+                  <li>Designed and deployed interactive Power BI and Tableau dashboards that supported data-driven decisions and reduced per-user reporting costs.</li>
+                  <li>Wrote technical documentation for new systems, supporting cross-team adoption of new data infrastructure.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 class="cv-heading">Education</h3>
-            <ol class="timeline">
-              <li>
-                <p class="when">2024 – Present</p>
-                <h4>MSc Data Science and AI</h4>
-                <p class="where">TU/e · Data Mining and Machine Learning</p>
-              </li>
-              <li>
-                <p class="when">2020 – 2022</p>
-                <h4>MSc Information Management</h4>
-                <p class="where">NOVA IMS, Lisbon</p>
-              </li>
-              <li>
-                <p class="when">2017 – 2020</p>
-                <h4>BSc Management</h4>
-                <p class="where">Politécnico de Leiria</p>
-              </li>
-            </ol>
-            <h3 class="cv-heading">Toolbox</h3>
-            <div class="skill-group">
-              <h4>ML and modeling</h4>
-              <ul class="chips">
-                <li>PyTorch</li><li>scikit-learn</li><li>Hugging Face</li><li>Pandas</li><li>NumPy</li>
-              </ul>
+
+          <div class="cv-side">
+            <div class="window">
+              <div class="window-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="window-title">joana@portfolio: ~/cv/education</span>
+              </div>
+              <div class="term-body cv-body">
+                <p class="term-line"><span class="prompt">$</span> cat education.log</p>
+                <div class="role">
+                  <p class="entry-date">Sept 2024 – Present</p>
+                  <h4 class="entry-title">MSc Data Science and AI</h4>
+                  <p class="entry-org">TU/e · Eindhoven, Netherlands</p>
+                  <div class="entry-details">
+                    <p class="edu-line"><span class="edu-key">major</span><span>Data Mining and Machine Learning</span></p>
+                    <p class="edu-line"><span class="edu-key">thesis</span><span>Uncertainty-aware fairness evaluation for AML/KYC risk models, in collaboration with ING</span></p>
+                    <p class="edu-line"><span class="edu-key">courses</span><span>Machine Learning Engineering, Deep Learning, Reinforcement Learning</span></p>
+                  </div>
+                </div>
+                <div class="role">
+                  <p class="entry-date">Sept 2020 – Oct 2022</p>
+                  <h4 class="entry-title">MSc Information Management</h4>
+                  <p class="entry-org">NOVA IMS, Universidade Nova de Lisboa · Portugal</p>
+                  <div class="entry-details">
+                    <p class="edu-line"><span class="edu-key">thesis</span><span>Impact of journal editors and editorial board composition on academic publications, a stochastic frontier analysis in R</span></p>
+                  </div>
+                </div>
+                <div class="role">
+                  <p class="entry-date">Sept 2017 – Jul 2020</p>
+                  <h4 class="entry-title">BSc Management</h4>
+                  <p class="entry-org">Politécnico de Leiria · Portugal</p>
+                </div>
+              </div>
             </div>
-            <div class="skill-group">
-              <h4>Data engineering</h4>
-              <ul class="chips">
-                <li>SQL</li><li>PostgreSQL</li><li>PySpark</li><li>Hive</li><li>SQLAlchemy</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h4>Production</h4>
-              <ul class="chips">
-                <li>FastAPI</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>PyTest</li><li>Datadog</li>
-              </ul>
+
+            <div class="window terminal">
+              <div class="window-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="window-title">joana@portfolio: ~/cv/toolbox</span>
+              </div>
+              <div class="term-body cv-body">
+                <p class="term-line" style="--i: 0"><span class="prompt">$</span> cat skills.txt</p>
+                <dl class="term-skills">
+                  <div class="term-row" style="--i: 1"><dt>languages</dt><dd>Python, R, SQL</dd></div>
+                  <div class="term-row" style="--i: 2"><dt>ml</dt><dd>PyTorch, scikit-learn, Hugging Face Transformers, NumPy, Pandas</dd></div>
+                  <div class="term-row" style="--i: 3"><dt>viz</dt><dd>Matplotlib, Seaborn, Streamlit, Power BI, Tableau</dd></div>
+                  <div class="term-row" style="--i: 4"><dt>data</dt><dd>Spark, PySpark, Hadoop HDFS, Hive, Impala, PostgreSQL, Oracle, SQLAlchemy</dd></div>
+                  <div class="term-row" style="--i: 5"><dt>mlops</dt><dd>Docker, Kubernetes, AWS (EC2, RDS, CloudWatch), FastAPI, Pydantic, PyTest, Datadog</dd></div>
+                  <div class="term-row" style="--i: 6"><dt>workflow</dt><dd>Git, GitLab, Agile Scrum</dd></div>
+                  <div class="term-row" style="--i: 7"><dt>certs</dt><dd>Machine Learning (Stanford), Data Structures and Algorithms (Codecademy)</dd></div>
+                </dl>
+                <p class="term-line" style="--i: 8"><span class="prompt">$</span> <span class="term-cursor">_</span></p>
+              </div>
             </div>
           </div>
         </div>
-        <a href="assets/cv.pdf" target="_blank" rel="noopener" class="btn">Download full CV</a>
       </div>
     </section>
 
@@ -228,31 +304,64 @@
       </div>
     </section>
 
+    <div class="ticker ticker-ltr" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+      </div>
+    </div>
+
     <section id="hobbies">
       <div class="container">
         <p class="label">04 / Offline</p>
         <h2>When I'm <em>offline.</em></h2>
         <div class="offline-grid">
-          <article class="offline-card">
-            <h3>On repeat</h3>
-            <ul class="routine">
-              <li><strong>Gym</strong><span>4 times a week, non-negotiable</span></li>
-              <li><strong>Running</strong><span>One run a week, somewhere between 5 and 10 km</span></li>
-              <li><strong>Reading</strong><span>Books, not papers. Those count as work.</span></li>
-            </ul>
+          <article class="window offline-window">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">on_repeat.txt</span>
+            </div>
+            <div class="term-body">
+              <p class="term-line"><span class="prompt">$</span> cat on_repeat.txt</p>
+              <ul class="term-list">
+                <li><span class="item"><span class="term-key">gym</span> 4 times a week</span></li>
+                <li><span class="item"><span class="term-key">running</span> 5 to 10 km, once a week</span></li>
+                <li><span class="item"><span class="term-key">reading</span> books, not papers</span></li>
+              </ul>
+            </div>
           </article>
-          <article class="offline-card">
-            <h3>Things I love</h3>
-            <ul class="chips">
-              <li>Coffee</li><li>Café hopping</li><li>Trying new food</li><li>Traveling</li><li>Sunsets</li><li>Summer nights</li><li>Good bread</li>
-            </ul>
+          <article class="window offline-window">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">things_i_love.txt</span>
+            </div>
+            <div class="term-body">
+              <p class="term-line"><span class="prompt">$</span> cat things_i_love.txt</p>
+              <ul class="term-list">
+                <li><span class="item">coffee</span></li>
+                <li><span class="item">gym</span></li>
+                <li><span class="item">basketball</span></li>
+                <li><span class="item">long walks</span></li>
+                <li><span class="item">traveling</span></li>
+                <li><span class="item">sunsets</span></li>
+                <li><span class="item">summer nights</span></li>
+                <li><span class="item">bread, sourdough</span></li>
+                <li><span class="item">cottage cheese, 1 specific brand</span></li>
+              </ul>
+            </div>
           </article>
-          <article class="offline-card">
-            <h3>Up next</h3>
-            <ul class="routine">
-              <li><strong>Stargazing</strong><span>Learning to find constellations without an app</span></li>
-              <li><strong>Phone photography</strong><span>Landscapes, and food before it disappears</span></li>
-            </ul>
+          <article class="window offline-window">
+            <div class="window-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="window-title">up_next.txt</span>
+            </div>
+            <div class="term-body">
+              <p class="term-line"><span class="prompt">$</span> cat up_next.txt</p>
+              <ul class="term-list">
+                <li><span class="item"><span class="term-key">stargazing</span> learning the constellations and how to spot them in the sky</span></li>
+                <li><span class="item"><span class="term-key">phone photography</span> landscapes and food (before it's gone)</span></li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -283,22 +392,21 @@
       <div class="container">
         <p class="label">06 / Contact</p>
         <h2>Open an <em>issue.</em></h2>
-        <p class="contact-text">Hiring for ML or fraud detection roles, working on something similar, or just have a café in Eindhoven I should try? I'd like to hear from you.</p>
-        <a href="mailto:joanaritalopess@hotmail.com" class="contact-email">joanaritalopess@hotmail.com</a>
-        <p class="hero-links contact-links">
-          <a href="https://www.linkedin.com/in/joanaritalopess/" target="_blank" rel="noopener">LinkedIn</a>
+        <p class="contact-text">I'm looking for Machine Learning roles, especially in fraud and anomaly detection. Hiring, working on something similar, or just have a café in Eindhoven I should try? I'd like to hear from you.</p>
+        <p class="contact-links">
           <a href="https://github.com/joanaritalopes" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/joanaritalopess/" target="_blank" rel="noopener">LinkedIn</a>
         </p>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Joana Lopes</p>
-      <p>Built by hand, no templates.</p>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+        <span>Thesis Intern @ ING · MSc Data Science and AI @ TU/e · Previously @ ECB and Deloitte · From Portugal · Based in the Netherlands · Open to Machine Learning roles · Fraud and anomaly detection · </span>
+      </div>
     </div>
-  </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
